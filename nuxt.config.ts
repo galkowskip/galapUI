@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  hooks: {
+    'ready'() {
+      console.log('✅ UI layer loaded!')
+    }
+  },
   components: [
     {
       path: './components',
